@@ -1,4 +1,15 @@
+function getRandomGrade() {
+  const r = Math.random() * 100;
 
+  if (r < 50) return "C";
+  if (r < 75) return "C+";
+  if (r < 80) return "B";
+  if (r < 88) return "B+";
+  if (r < 92) return "A";
+  if (r < 94) return "A+";
+  if (r < 99.3) return "S";
+  return "S+";
+}
 'use client';
 import { useState } from "react";
 import { motion } from "framer-motion";
